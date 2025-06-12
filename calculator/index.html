@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="B">
+    <button class="mode" onclick="mode()">MODE</button>
+    <table border="1" align="center" cellspacing="10px" cellpadding="15px" class="TBL">
+        <tr>
+            <th colspan="4" id="ans">0</th>
+           
+        </tr>
+        <tr>
+            <td onclick="press('1')">1</td>
+            <td onclick="press('2')">2</td>
+            <td onclick="press('3')">3</td>
+            <td onclick="press('+')">+</td>
+        </tr>
+        <tr>
+            <td onclick="press('4')">4</td>
+            <td onclick="press('5')">5</td>
+            <td onclick="press('6')">6</td>
+            <td onclick="press('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="press('7')">7</td>
+            <td onclick="press('8')">8</td>
+            <td onclick="press('9')">9</td>
+            <td onclick="press('*')">*</td>
+        </tr>
+        <tr>
+            <td onclick="press('0')">0</td>
+            <td onclick="press('00')">00</td>
+            <td onclick="press('/')">/</td>
+            <td rowspan="2" onclick="answer()" class="qual">=</td>
+        </tr>
+        <tr>
+            <td onclick="del('')">Del</td>
+            <td onclick="clr('')">CL</td>
+            <td onclick="press('%')">%</td>
+        </tr>
+    </table>
+</body>
+<script src="script.js"></script>
+</html>
