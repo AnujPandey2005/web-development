@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Apple Products</h1> <div class="logo"></div>
+        <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+
+    </header>
+
+    
+    <div class="container">
+        <!-- Products List -->
+        <div class="products" id="products">
+            <!-- Products will be added via JS -->
+        </div>
+
+        <!-- Shopping Cart -->
+        <div class="cart" id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be added here -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: $<span id="total-price">0</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
